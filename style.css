@@ -24,6 +24,10 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -45,6 +49,8 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
+
+
 .container .header .logo{
     width: 10%;
     cursor: pointer;
@@ -53,6 +59,8 @@ ul{
 .container .header .logo i{
     color: #CD104D;
 }
+
+
 .container .header .searchbar{
     width: 60%;
     text-align: center;
@@ -60,8 +68,8 @@ ul{
 }
 .container .header .searchbar input{
     width: 500px;
-    height: 30px;
-    border-radius: 15px;
+    height: 35px;
+    border-radius: 20px;
     padding-left: 10px;
     border: none;
     background-color: var(--primary);
@@ -70,6 +78,7 @@ ul{
 .container .header .searchbar input:hover{
     transform: scale(1.1);
 }
+
 
 .container .header .info{
     display: flex;
@@ -202,9 +211,11 @@ ul{
 }
 .about_hotel .name{
     color: grey;
+    display: grid;
+    align-items: center;
     padding-left: 20px;
     background-color: var(--light);
-   align-items: center;
+    
 }
 .container .about_hotel .location{
     display: flex;
@@ -215,6 +226,7 @@ ul{
 }
 .container .about_hotel .location a{
     color: #CD104D; 
+    border-bottom: 2px solid #CD104D;
     /* border: 2px solid red; */
 }
 .container .about_hotel .location .rating{
@@ -238,12 +250,12 @@ ul{
 .container .content_section{
     grid-area: 4/2/-2/-1;
     display: grid;
-    margin: 15px;
+    padding: 15px;
     color: gray;
     /* border: 2px solid red; */
     grid-template-columns: 1fr 120px 110px;
-    grid-template-rows:1fr 1fr 20px;
-    grid-gap: 20px;
+    grid-template-rows:1fr 1fr 30px;
+    grid-gap: 15px;
     background-color: var(--primary);
 }
 .container .content_section .pros{
@@ -326,6 +338,7 @@ ul{
 }
 .container .content_section .showall a{
     color: #CD104D;
+    border-bottom: 2px solid #CD104D;
 }
 .container .content_section .offers{
     grid-row: 1/-2;
